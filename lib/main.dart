@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'screens/register/sign_in.dart';
 import 'screens/register/create_account.dart';
 import 'screens/register/email_verification.dart';
+import 'screens/register/profile.dart';
+import 'screens/register/openning.dart'; // Harus ADA dan tidak typo
+
+
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +29,9 @@ class MyApp extends StatelessWidget {
         '/sign-in': (context) => const SignInScreen(),
         '/create-account': (context) => const CreateAccountScreen(),
         '/email-verification': (context) => const EmailVerificationScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/openning': (context) => const OpenningScreen(),
+
       },
     );
   }

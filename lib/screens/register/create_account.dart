@@ -11,11 +11,11 @@ class CreateAccountScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     // Controller untuk input form
-    final TextEditingController _firstNameController = TextEditingController();
-    final TextEditingController _lastNameController = TextEditingController();
-    final TextEditingController _emailController = TextEditingController();
-    final TextEditingController _passwordController = TextEditingController();
-    final TextEditingController _confirmPasswordController =
+    final TextEditingController firstNameController = TextEditingController();
+    final TextEditingController lastNameController = TextEditingController();
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
+    final TextEditingController confirmPasswordController =
         TextEditingController();
 
     return Scaffold(
@@ -206,14 +206,14 @@ class CreateAccountScreen extends StatelessWidget {
                       children: [
                         Expanded(
                           child: CustomTextField(
-                            controller: _firstNameController,
+                            controller: firstNameController,
                             hintText: 'First Name',
                           ),
                         ),
                         const SizedBox(width: 12),
                         Expanded(
                           child: CustomTextField(
-                            controller: _lastNameController,
+                            controller: lastNameController,
                             hintText: 'Last Name',
                           ),
                         ),
@@ -224,7 +224,7 @@ class CreateAccountScreen extends StatelessWidget {
 
                     // ======== Input Email ========
                     CustomTextField(
-                      controller: _emailController,
+                      controller: emailController,
                       hintText: 'E-mail',
                     ),
 
@@ -232,7 +232,7 @@ class CreateAccountScreen extends StatelessWidget {
 
                     // ======== Input Password ========
                     CustomTextField(
-                      controller: _passwordController,
+                      controller: passwordController,
                       hintText: 'Password',
                       obscureText: true,
                     ),
@@ -253,7 +253,7 @@ class CreateAccountScreen extends StatelessWidget {
 
                     // ======== Konfirmasi Password ========
                     CustomTextField(
-                      controller: _confirmPasswordController,
+                      controller: confirmPasswordController,
                       hintText: 'Confirm Password',
                       obscureText: true,
                     ),
