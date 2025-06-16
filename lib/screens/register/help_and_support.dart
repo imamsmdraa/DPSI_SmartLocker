@@ -24,6 +24,8 @@ class HelpAndSupportScreen extends StatelessWidget {
 }
 
 class Profile extends StatelessWidget {
+  const Profile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -101,7 +103,7 @@ class Profile extends StatelessWidget {
               Positioned(
                 left: 9,
                 top: 3,
-                child: Container(
+                child: SizedBox(
                   width: 375,
                   height: 44,
                   child: Stack(
@@ -109,7 +111,7 @@ class Profile extends StatelessWidget {
                       Positioned(
                         left: 0,
                         top: 0,
-                        child: Container(width: 375, height: 44),
+                        child: SizedBox(width: 375, height: 44),
                       ),
                       Positioned(
                         left: 336,
@@ -148,7 +150,7 @@ class Profile extends StatelessWidget {
                       Positioned(
                         left: 21,
                         top: 13,
-                        child: Container(
+                        child: SizedBox(
                           width: 54,
                           height: 21,
                           child: Stack(

@@ -5,6 +5,9 @@ import 'screens/register/create_account.dart';
 import 'screens/register/email_verification.dart';
 import 'screens/register/history.dart';
 import 'screens/register/help_and_support.dart';
+import 'screens/register/profile.dart';
+import 'screens/register/openning.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +32,9 @@ class MyApp extends StatelessWidget {
         '/email-verification': (context) => const EmailVerificationScreen(),
         '/history': (context) => const HistoryScreen(),
         '/help_and_support': (context) => const HelpAndSupportScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/openning': (context) => const OpenningScreen(),
+
       },
     );
   }
