@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/register/edit_profile.dart';
 import '../screens/register/home_screen.dart';
 import '../screens/register/payment_screen.dart';
 import '../screens/register/success_screen.dart';
@@ -23,6 +24,7 @@ class AppRoutes {
   static const String profile = '/profile';
   static const String openning = '/openning';
   static const String language = '/language';
+  static const String editProfile = '/edit_profile';
 
 
 
@@ -38,7 +40,8 @@ class AppRoutes {
     helpAndSupport: (context) => const HelpAndSupportScreen(),
     profile: (context) => const ProfileScreen(),
     openning: (context) => const OpenningScreen(),
-    language: (context) => const FigmaToCodeApp(),
+    language: (context) => const LanguageScreen(),
+    editProfile: (context) => const EditProfilePage(),
 
   };
 }

@@ -1,5 +1,6 @@
 // main.dart
 import 'package:flutter/material.dart';
+import 'screens/register/edit_profile.dart';
 import 'screens/register/sign_in.dart';
 import 'screens/register/create_account.dart';
 import 'screens/register/email_verification.dart';
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
         '/home_screen': (context) => const HomeScreen(),
         '/payment_screen': (context) => const PaymentScreen(),
         '/success_screen': (context) => const SuccessScreen(),
-        '/language': (context) => const FigmaToCodeApp(),
+        '/language': (context) => const LanguageScreen(),
+        '/edit_profile': (context) => const EditProfilePage(),
 
       },
     );
