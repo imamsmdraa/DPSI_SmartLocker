@@ -122,12 +122,12 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 22),
               Container(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
+                    const EdgeInsets.symmetric(vertical: 62, horizontal: 16),
                 decoration: const BoxDecoration(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 255, 255, 255),
                   borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
                 ),
                 child: Column(
