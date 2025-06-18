@@ -30,7 +30,7 @@ class OpenningScreen extends StatelessWidget {
                     letterSpacing: -0.36,
                     shadows: [
                       Shadow(
-                        offset: Offset(2, 3),
+                        offset: const Offset(2, 3),
                         blurRadius: 2,
                         color: Colors.black.withOpacity(0.1),
                       )
@@ -71,7 +71,8 @@ class OpenningScreen extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/sign-in');
+                        // Ganti route ke create-account
+                        Navigator.pushNamed(context, '/create-account');
                       },
                       child: const Text(
                         'Start',

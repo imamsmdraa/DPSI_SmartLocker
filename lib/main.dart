@@ -8,11 +8,10 @@ import 'screens/register/help_and_support.dart';
 import 'screens/register/profile.dart';
 import 'screens/register/openning.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
- 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
         '/help_and_support': (context) => const HelpAndSupportScreen(),
         '/profile': (context) => const ProfileScreen(),
         '/openning': (context) => const OpenningScreen(),
-
       },
     );
   }
