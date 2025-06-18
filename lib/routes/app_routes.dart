@@ -9,10 +9,7 @@ import '../screens/register/history.dart';
 import '../screens/register/help_and_support.dart';
 import '../screens/register/profile.dart';
 import '../screens/register/openning.dart';
-<<<<<<< Updated upstream
 import '../screens/register/language.dart';
-=======
->>>>>>> Stashed changes
 
 class AppRoutes {
   static const String home = '/home';
@@ -27,12 +24,6 @@ class AppRoutes {
   static const String openning = '/openning';
   static const String language = '/language';
 
-<<<<<<< Updated upstream
-
-
-
-=======
->>>>>>> Stashed changes
   static final Map<String, WidgetBuilder> routes = {
     home: (context) => const HomeScreen(),
     payment: (context) => const PaymentScreen(),
@@ -44,10 +35,6 @@ class AppRoutes {
     helpAndSupport: (context) => const HelpAndSupportScreen(),
     profile: (context) => const ProfileScreen(),
     openning: (context) => const OpenningScreen(),
-<<<<<<< Updated upstream
     language: (context) => const FigmaToCodeApp(),
-
-=======
->>>>>>> Stashed changes
   };
 }
