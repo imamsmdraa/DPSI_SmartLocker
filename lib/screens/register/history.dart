@@ -51,7 +51,7 @@ class ProfileUser extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Container Putih Besar (Gradient + History Title + Active Booking)
-            Container(
+            SizedBox(
               width: 343,
               height: 558,
               child: Stack(
@@ -130,7 +130,7 @@ class ProfileUser extends StatelessWidget {
                   Positioned(
                     left: 10,
                     top: 150,
-                    child: Container(
+                    child: SizedBox(
                       width: 320,
                       height: 350,
                       child: Stack(

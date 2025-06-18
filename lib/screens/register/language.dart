@@ -24,6 +24,8 @@ class FigmaToCodeApp extends StatelessWidget {
 }
 
 class ProfileUser extends StatelessWidget {
+  const ProfileUser({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -117,7 +119,7 @@ class ProfileUser extends StatelessWidget {
                       Positioned(
                         left: 9,
                         top: 3,
-                        child: Container(
+                        child: SizedBox(
                           width: 375,
                           height: 44,
                           child: Stack(
@@ -125,7 +127,7 @@ class ProfileUser extends StatelessWidget {
                               Positioned(
                                 left: 0,
                                 top: 0,
-                                child: Container(width: 375, height: 44),
+                                child: SizedBox(width: 375, height: 44),
                               ),
                               Positioned(
                                 left: 336,
@@ -164,7 +166,7 @@ class ProfileUser extends StatelessWidget {
                               Positioned(
                                 left: 21,
                                 top: 13,
-                                child: Container(
+                                child: SizedBox(
                                   width: 54,
                                   height: 21,
                                   child: Stack(
@@ -260,7 +262,7 @@ class ProfileUser extends StatelessWidget {
                               Positioned(
                                 left: 17,
                                 top: 27,
-                                child: Container(
+                                child: SizedBox(
                                   height: 49,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -292,7 +294,7 @@ class ProfileUser extends StatelessWidget {
                                           shape: OvalBorder(),
                                         ),
                                       ),
-                                      Container(width: 20, height: 20, child: Stack()),
+                                      SizedBox(width: 20, height: 20, child: Stack()),
                                     ],
                                   ),
                                 ),
@@ -500,7 +502,7 @@ class ProfileUser extends StatelessWidget {
                       Positioned(
                         left: 182.93,
                         top: 10,
-                        child: Container(
+                        child: SizedBox(
                           width: 20.91,
                           height: 20,
                           child: Stack(),
@@ -524,7 +526,7 @@ class ProfileUser extends StatelessWidget {
                       Positioned(
                         left: 105.58,
                         top: 10,
-                        child: Container(
+                        child: SizedBox(
                           width: 20.91,
                           height: 20,
                           child: Stack(),
@@ -548,7 +550,7 @@ class ProfileUser extends StatelessWidget {
                       Positioned(
                         left: 333.46,
                         top: 10,
-                        child: Container(
+                        child: SizedBox(
                           width: 20.91,
                           height: 20,
                           child: Stack(),
@@ -572,7 +574,7 @@ class ProfileUser extends StatelessWidget {
                       Positioned(
                         left: 39,
                         top: 14,
-                        child: Container(width: 25, height: 25, child: Stack()),
+                        child: SizedBox(width: 25, height: 25, child: Stack()),
                       ),
                       Positioned(
                         left: 48.95,
