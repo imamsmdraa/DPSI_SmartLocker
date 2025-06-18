@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Inter',
         useMaterial3: true,
       ),
-      initialRoute: '/sign-in',
+      initialRoute: '/openning',
       routes: {
         '/sign-in': (context) => const SignInScreen(),
         '/create-account': (context) => const CreateAccountScreen(),
