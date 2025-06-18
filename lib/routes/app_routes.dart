@@ -9,6 +9,7 @@ import '../screens/register/history.dart';
 import '../screens/register/help_and_support.dart';
 import '../screens/register/profile.dart';
 import '../screens/register/openning.dart';
+import '../screens/register/language.dart';
 
 class AppRoutes {
   static const String home = '/home';
@@ -21,6 +22,10 @@ class AppRoutes {
   static const String helpAndSupport = '/help_and_support';
   static const String profile = '/profile';
   static const String openning = '/openning';
+  static const String language = '/language';
+
+
+
 
   static final Map<String, WidgetBuilder> routes = {
     home: (context) => const HomeScreen(),
@@ -33,5 +38,7 @@ class AppRoutes {
     helpAndSupport: (context) => const HelpAndSupportScreen(),
     profile: (context) => const ProfileScreen(),
     openning: (context) => const OpenningScreen(),
+    language: (context) => const FigmaToCodeApp(),
+
   };
 }
