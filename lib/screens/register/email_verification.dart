@@ -45,8 +45,8 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
     String code = _controllers.map((c) => c.text).join();
     debugPrint('Kode verifikasi: $code');
 
-    // TODO: Validasi kode dengan backend
-    // Jika berhasil:
+    // T0D0 : validasi kode dengan backend
+    // Jika berhasil
     Navigator.pushReplacementNamed(context, '/openning');
   }
 

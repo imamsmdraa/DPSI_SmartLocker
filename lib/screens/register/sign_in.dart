@@ -1,8 +1,42 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'auth_service.dart';
+import 'payment.dart';
 
-class SignInScreen extends StatelessWidget {
+class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
+
+  @override
+  State<SignInScreen> createState() => _SignInScreenState();
+}
+
+class _SignInScreenState extends State<SignInScreen> {
+  // Controller dideklarasikan di sini, bukan di _buildFormContent
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  void _login() {
+    final email = emailController.text;
+    final password = passwordController.text;
+    final success = AuthService.login(email, password);
+
+    if (success) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Login berhasil!')),
+      );
+
+      Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder:(context) => HomeScreen()),
+      );
+      // Navigasi jika perlu
+      // Navigator.pushReplacementNamed(context, '/openning');
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Login gagal!')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +79,7 @@ class SignInScreen extends StatelessWidget {
                       : Column(
                           children: [
                             const SizedBox(height: 24),
-                            Image.asset('assets/images/verify.png',
-                                height: 200),
+                            Image.asset('assets/images/verify.png', height: 200),
                             const SizedBox(height: 16),
                             _buildFormContent(context, isWide),
                           ],
@@ -60,10 +93,8 @@ class SignInScreen extends StatelessWidget {
     );
   }
 
+  // Perhatikan: controller diambil dari State, bukan dibuat baru
   Widget _buildFormContent(BuildContext context, bool isWide) {
-    final emailController = TextEditingController();
-    final passwordController = TextEditingController();
-
     return Column(
       crossAxisAlignment:
           isWide ? CrossAxisAlignment.start : CrossAxisAlignment.center,
@@ -121,7 +152,6 @@ class SignInScreen extends StatelessWidget {
           ),
           child: Column(
             children: [
-              // Tabs
               Row(
                 children: [
                   Expanded(
@@ -169,7 +199,7 @@ class SignInScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               TextField(
-                controller: emailController,
+                controller: emailController, // gunakan controller dari State
                 decoration: InputDecoration(
                   labelText: 'Email',
                   border: OutlineInputBorder(
@@ -179,7 +209,7 @@ class SignInScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               TextField(
-                controller: passwordController,
+                controller: passwordController, // gunakan controller dari State
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Password',
@@ -188,7 +218,6 @@ class SignInScreen extends StatelessWidget {
                   ),
                   suffixIcon: TextButton(
                     onPressed: () {
-                      // Placeholder - nanti bisa diarahkan ke screen lupa password
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
                             content: Text("Forgot Password clicked")),
@@ -203,9 +232,7 @@ class SignInScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacementNamed(context, '/openning');
-                },
+                onTap: _login, // panggil fungsi login
                 child: Container(
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(vertical: 16),

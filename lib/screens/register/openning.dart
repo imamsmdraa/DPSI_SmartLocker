@@ -41,12 +41,15 @@ class OpenningScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // Illustration
-                    Image.asset(
-                      'assets/images/openning_illustration.png',
+                    SizedBox(
+                      width: double.infinity,
                       height: 250,
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                      
+                      ),
                     ),
 
-                    const SizedBox(height: 32),
 
                     // App Name
                     Text(

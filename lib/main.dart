@@ -7,7 +7,7 @@ import 'screens/register/history.dart';
 import 'screens/register/help_and_support.dart';
 import 'screens/register/profile.dart';
 import 'screens/register/openning.dart';
-import 'screens/register/home_screen.dart';
+import 'screens/register/payment.dart';
 import 'screens/register/payment_screen.dart';
 import 'screens/register/success_screen.dart';
 import 'screens/register/language.dart';

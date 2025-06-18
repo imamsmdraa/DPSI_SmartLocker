@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/register/home_screen.dart';
+import '../screens/register/payment.dart';
 import '../screens/register/payment_screen.dart';
 import '../screens/register/success_screen.dart';
 import '../screens/register/sign_in.dart';
