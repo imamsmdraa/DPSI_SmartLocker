@@ -42,7 +42,7 @@ class OpenningScreen extends StatelessWidget {
                   children: [
                     // Illustration
                     Image.asset(
-                      'assets/images/openning_illustration.png',
+                      'assets/images/logo1.png',
                       height: 250,
                     ),
 
